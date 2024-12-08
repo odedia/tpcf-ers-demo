@@ -5,7 +5,5 @@ applications:
   instances: 1
   random-route: true
   path: target/pcf-ers-demo1-0.0.1-SNAPSHOT.jar
-  buildpack: java_buildpack
+  buildpack: java_buildpack_offline
   services: []
-  env:
-    SPRING_PROFILES_ACTIVE: cloud

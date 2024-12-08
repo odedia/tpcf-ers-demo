@@ -16,8 +16,9 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import io.pivotal.pcf.sme.ers.client.model.Attendee;
@@ -62,8 +63,8 @@ public class AttendeeController {
 	 * 
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/basics", method = RequestMethod.GET)
-	public String kill(HttpServletRequest request, @RequestParam(value = "doit", required = false) boolean doit, Model model) throws Exception {
+	@GetMapping("/basics")
+	public String kill(HttpServletRequest request, @RequestParam(required = false) boolean doit, Model model) throws Exception {
 
 		addAppEnv(request, model);
 
@@ -89,7 +90,7 @@ public class AttendeeController {
 	}
 	
 	@SuppressWarnings("resource")
-	@RequestMapping(value = "/ssh-file", method = RequestMethod.GET)
+	@GetMapping("/ssh-file")
 	public String writeFile(HttpServletRequest request, Model model) throws Exception {
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yy HH:mm:ss");
@@ -114,7 +115,7 @@ public class AttendeeController {
 	 *            The model for this action.
 	 * @return The path to the view.
 	 */
-	@RequestMapping(value = "/services", method = RequestMethod.GET)
+	@GetMapping("/services")
 	public String attendees(HttpServletRequest request, Model model) throws Exception {
 
 		model.addAttribute("attendees", attendeeService.getAttendees());
@@ -130,7 +131,7 @@ public class AttendeeController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/clean", method = RequestMethod.GET)
+	@GetMapping("/clean")
 	public String clean(HttpServletRequest request, Model model) throws Exception {
 
 		attendeeService.deleteAll();
@@ -155,9 +156,9 @@ public class AttendeeController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/add-attendee", method = RequestMethod.POST)
-	public String addAttendee(HttpServletRequest request, @RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName,
-			@RequestParam("emailAddress") String emailAddress, Model model) throws Exception {
+	@PostMapping("/add-attendee")
+	public String addAttendee(HttpServletRequest request, @RequestParam String firstName, @RequestParam String lastName,
+			@RequestParam String emailAddress, Model model) throws Exception {
 
 		Attendee attendee = new Attendee();
 		attendee.setFirstName(firstName);
