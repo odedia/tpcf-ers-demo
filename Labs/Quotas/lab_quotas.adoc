@@ -7,7 +7,7 @@
 
 [abstract]
 --
-How to control usage in your Pivotal Cloud Foundry orgs and spaces using quotas
+How to control usage in your Tanzu Platform for Cloud Foundry orgs and spaces using quotas
 --
 
 Estimated Time: 25 minutes

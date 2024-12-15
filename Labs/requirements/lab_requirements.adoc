@@ -5,17 +5,14 @@
 
 * Familiarity with Linux or Windows shell commands
 * Experience with networking and/or distributed computing, especially using an IAAS like AWS, vSphere, or OpenStack
-* Interest in learning to manage a Pivotal Cloud Foundry installation
+* Interest in learning to manage a Tanzu Platform for Cloud Foundry installation
 
-==  PCF Environment
+==  tPCF Environment
 
-Either Pivotal Web Services, PCF Dev, your local environment or one provided by Pivotal.
+Your local environment or one provided by Tanzu.
 
 
 ==  Local System
 * Install the CF CLI
 * TDB
 
-==  Optional
-
-* Take the free Intro to https://pivotal.io/academy/course/introduction-to-pivotal-cloud-foundry[Pivotal Cloud Foundry] 

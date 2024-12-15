@@ -333,7 +333,7 @@ $ watch /var/vcap/bosh/bin/monit summary
 +
 `Control + C` to stop the `watch`.
 +
-. Repeat killing the `rep` process and view the effects in `Pivotal Elastic Runtime` tile `Status` tab within Ops Manager.
+. Repeat killing the `rep` process and view the effects in `Elastic Runtime` tile `Status` tab within Ops Manager.
 +
 image::rep-down.png[]
 
@@ -346,4 +346,4 @@ image::rep-down.png[]
 
 == Beyond the class
 
-Learn more about using BOSH to troubleshoot a PCF installation.  https://blog.pivotal.io/labs/labs/troubleshooting-bosh-releasesdeployments[This blog] is a great starting point.
+Learn more about using BOSH to troubleshoot a tPCF installation.  https://blog.pivotal.io/labs/labs/troubleshooting-bosh-releasesdeployments[This blog] is a great starting point.

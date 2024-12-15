@@ -2286,7 +2286,7 @@ jasmine.WaitsForBlock.prototype.execute = function(onComplete) {
   }
 };
 // Mock setTimeout, clearTimeout
-// Contributed by Pivotal Computer Systems, www.pivotalsf.com
+// Contributed by Tanzu by Broadcom, https://www.vmware.com/products/app-platform/tanzu
 
 jasmine.FakeTimer = function() {
   this.reset();

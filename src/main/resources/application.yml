@@ -1,14 +1,19 @@
-spring.profiles.active: dev
-
-spring.jpa.hibernate.ddl-auto: update
+spring:
+  application:
+    name: attendees
+  profiles:
+    active: dev 
+  datasource:
+    initialize: true
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  jpa:
+    hibernate:
+      ddl-auto: update  # or 'create' to force recreate the schema each time
 
 ribbon:
   eureka:
     enabled: false
-
-spring:
-  application:
-    name: attendees
 
 # don't do this in production, we are doing it here so that
 # we can do features of Cloud Foundry without having to explain

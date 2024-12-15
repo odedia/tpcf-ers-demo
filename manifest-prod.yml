@@ -1,6 +1,0 @@
----
-applications:
-- name: pcf-ers-demo
-  memory: 1024MB
-  instances: 1
-  random-route: true

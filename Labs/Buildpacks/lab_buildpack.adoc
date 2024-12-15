@@ -5,7 +5,7 @@
 
 [abstract]
 --
-How to use a custom buildpack, including: configuring the Java Buildpack and making a custom buildpack available across your PCF installation
+How to use a custom buildpack, including: configuring the Java Buildpack and making a custom buildpack available across your tPCF installation
 --
 
 Estimated Time: 25 minutes
@@ -80,7 +80,7 @@ $ cf restage attendees
 
 == Create a Buildpack
 . Read about adding buildpacks to your http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html[Cloud Foundry Installation].
-. Create a new buildpack using the Java buildpack https://github.com/cloudfoundry/java-buildpack/releases/download/v3.10/java-buildpack-offline-v3.10.zip[here]. Ensure you are targeting your PCF installation and that you are logged in as admin.
+. Create a new buildpack using the Java buildpack https://github.com/cloudfoundry/java-buildpack/releases/download/v3.10/java-buildpack-offline-v3.10.zip[here]. Ensure you are targeting your tPCF installation and that you are logged in as admin.
 +
 `cd` into the directory that contains the buildpack and run the create buildpack command.
 +
@@ -90,7 +90,7 @@ For example:
 $ cf create-buildpack super_awesome_java_pack ./java-buildpack-offline-v3.10.zip 1
 ----
 +
-. Confirm that the buildpack was added.  Again, you must be a Cloud Foundry admin user to run the commands discussed in this section, which means this will not work on Pivotal Web Services (PWS).
+. Confirm that the buildpack was added.  Again, you must be a Cloud Foundry admin user to run the commands discussed in this section.
 +
 ----
 $ cf buildpacks

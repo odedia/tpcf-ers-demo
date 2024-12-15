@@ -1,5 +1,5 @@
-= Pivotal Cloud Foundry Basics 
-Pivotal Platform Architecture Team
+= Tanzu Platform for Cloud Foundry Basics 
+Tanzu by Broadcom
 :backend: deckjs
 :deckjs_transition: fade
 :navigation:

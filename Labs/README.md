@@ -1,10 +1,10 @@
-# PCF Elastic Runtime Basic Demo Labs
-A set of labs that help you understand PCF and this application. 
+# tPCF Elastic Runtime Basic Demo Labs
+A set of labs that help you understand tPCF and this application. 
 You can run them in no particular order, but below is our suggestion. 
 
-Tested with PCF 1.11, PCFDev, Pivotal Web Services and PEZ (Internal Pivotal Environment)
+Tested with Tanzu Platform 10
 
-* [PCF PUSH](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/blob/master/Labs/Application_Push/lab_application_push.adoc)
+* [tPCF PUSH](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/blob/master/Labs/Application_Push/lab_application_push.adoc)
 * [Logging, Scale and HA](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/blob/master/Labs/Logging_Scale_HA/lab_logging_scale_ha.adoc)
 * [Services](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/blob/master/Labs/Services/lab_services.adoc)
 * [Blue Green Deployment](https://github.com/Pivotal-Field-Engineering/pcf-ers-demo/blob/master/Labs/Blue_Green/lab_blue_green.adoc)

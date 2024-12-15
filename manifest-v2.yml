@@ -1,11 +1,10 @@
 ---
 applications:
-- name: attendees-v2
-  memory: 1GB
+- name: attendees
+  memory: 768M
   instances: 1
   random-route: true
-  path: target/pcf-ers-demo-2.0.jar
-#  buildpack: java_buildpack
-  services: []
+  path: target/pcf-ers-demo1-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
   env:
-    SPRING_PROFILES_ACTIVE: cloud
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+}}'

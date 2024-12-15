@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,7 +73,7 @@ public class AttendeeService {
 	/**
 	 * bluegreenRequest - It really just returns the app name.
 	 * 
-	 * The purpose is to show PCF load balancing between applications that share
+	 * The purpose is to show tPCF load balancing between applications that share
 	 * routes
 	 * 
 	 * @return

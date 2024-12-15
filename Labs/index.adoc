@@ -2,7 +2,7 @@
 :icons: font
 include::header.adoc[]
 
-== Basic Pivotal Cloud Foundry Developer
+== Basic Tanzu Platform for Cloud Foundry Developer
 
 [caption=""]
 [%autowidth.spread]
@@ -10,7 +10,7 @@ include::header.adoc[]
 [grid=rows]
 [cols="<,>,>"]
 [.center.text-center]
-.Basic Pivotal Cloud Foundry Developer
+.Basic Tanzu Platform for Cloud Foundry Developer
 |===
 
 |Push to the cloud | <<slides_application_push.adoc#,Slides>> | <<lab_application_push.adoc#,Lab>>
