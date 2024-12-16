@@ -10,8 +10,8 @@ As you all know, we often transform other work into our own. This is all based f
 ## Introduction
 This base application is intended to demonstrate some of the basic functionality of tPCF ERS:
 
-* tPCF api, target, login, and push
-* tPCF environment variables
+* cf api, target, login, and push
+* cf environment variables
   * Spring Cloud Profiles
 * Scaling, self-healing, router and load balancing
 * RDBMS service and application auto-configuration
